@@ -1,4 +1,3 @@
-// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 import 'dart:io';
 import 'package:flutter/material.dart';
 import 'app_colors.dart';
@@ -17,14 +16,6 @@ class AppDrawer extends StatelessWidget {
         children: [
           DrawerHeader(
             decoration: BoxDecoration(
-              // gradient: LinearGradient(
-              //   colors: [
-              //     AppColors.primaryBG.withOpacity(0.7),
-              //     AppColors.primaryBG.withOpacity(0.9),
-              //   ],
-              //   begin: Alignment.topLeft,
-              //   end: Alignment.bottomRight,
-              // ),
               color: AppColors.primaryBG,
             ),
             child: Stack(
@@ -37,8 +28,6 @@ class AppDrawer extends StatelessWidget {
                     Expanded(
                       child: Image.asset(
                         'assets/img/logo.png',
-                        // height: 80,
-                        // width: 100,
                       ),
                     ),
                     SizedBox(height: media.height * 0.01),
@@ -105,24 +94,17 @@ class AppDrawer extends StatelessWidget {
           ),
           ListTile(
             leading: const Icon(
-              Icons.info_outline_rounded,
+              Icons.handshake_rounded,
               color: AppColors.primaryColor2,
             ),
             title: const Text(
-              'About',
+              'Privacy Policy',
               style: TextStyle(
                 color: AppColors.primaryColor2,
               ),
             ),
             onTap: () {
-              if (ModalRoute.of(context)?.settings.name == '/about') {
-                Navigator.pop(context);
-              } else {
-                Navigator.pushNamed(
-                  context,
-                  '/about',
-                );
-              }
+              
             },
           ),
           ListTile(

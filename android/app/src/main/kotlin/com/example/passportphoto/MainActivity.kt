@@ -1,4 +1,4 @@
-package com.example.passportphoto
+package com.thulotechnology.USPhotoIDMaker
 
 import io.flutter.embedding.android.FlutterActivity
 

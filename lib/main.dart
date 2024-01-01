@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:us_photo_id/provider/image_provider.dart';
-import 'package:us_photo_id/screen/about_screen.dart';
 import 'package:us_photo_id/screen/howtouse_screen.dart';
 import 'package:provider/provider.dart';
 import 'screen/home_screen.dart';
@@ -39,7 +38,6 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (context) => const HomePage(),
         '/test': (context) => const pp(),
-        '/about': (context) => Aboutpage(),
         '/howtouse': (context) => const HowToUse(),
       },
     );
