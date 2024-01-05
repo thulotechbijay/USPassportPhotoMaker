@@ -1,6 +1,7 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
 import 'app_colors.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class AppDrawer extends StatelessWidget {
   const AppDrawer({
@@ -104,7 +105,7 @@ class AppDrawer extends StatelessWidget {
               ),
             ),
             onTap: () {
-              
+              Uri.https("https://bijayrajpou.github.io/PrivacyPolicy/privacy.html");
             },
           ),
           ListTile(

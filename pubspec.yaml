@@ -40,7 +40,7 @@ dependencies:
   screenshot: ^2.1.0
   image_gallery_saver: ^2.0.3
   image_editor_plus: ^0.2.5
-  url_launcher:
+  url_launcher: ^6.2.2
 
 dev_dependencies:
   flutter_test:
